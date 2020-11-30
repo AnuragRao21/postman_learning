@@ -23,11 +23,11 @@ public void createAccount(){
 	driver.findElement(By.linkText("Create Account")).click();
 	String str1=driver.getTitle();
 	System.out.println(str1);
-	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[3]/td[3]/input")).sendKeys("raghuveer");
-	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[7]/td[3]/input[1]")).sendKeys("raghuveer1230224");
+	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[3]/td[3]/input")).sendKeys("anuragrao");
+	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[7]/td[3]/input[1]")).sendKeys("anur1230224");
 	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[7]/td[3]/input[2]")).click();
-	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[9]/td[3]/input")).sendKeys("R@veer123022");
-	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[11]/td[3]/input")).sendKeys("R@veer123022");
+	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[9]/td[3]/input")).sendKeys("anu123022");
+	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[11]/td[3]/input")).sendKeys("anuveer123022");
 	driver.findElement(By.xpath("//*[@id='tblcrtac']/tbody/tr[15]/td[2]/table/tbody/tr/td[1]/input")).click();
 	Select dropdown = new Select(driver.findElement(By.xpath("//*[@id='div_hintQS']/table/tbody/tr[2]/td[3]/select")));  
 	dropdown.selectByVisibleText("What is the name of your first school?");  
